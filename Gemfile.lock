@@ -6,7 +6,11 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    amq-protocol (2.3.2)
     builder (3.2.4)
+    bunny (2.19.0)
+      amq-protocol (~> 2.3, >= 2.3.1)
+      sorted_set (~> 1, >= 1.0.2)
     concurrent-ruby (1.1.10)
     dry-configurable (0.14.0)
       concurrent-ruby (~> 1.0)
@@ -46,7 +50,12 @@ GEM
     rack (2.2.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
+    rbtree (0.4.5)
     ruby2_keywords (0.0.5)
+    set (1.0.2)
+    sorted_set (1.0.3)
+      rbtree
+      set (~> 1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
 
@@ -54,6 +63,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  bunny
   grape
   puma
 
