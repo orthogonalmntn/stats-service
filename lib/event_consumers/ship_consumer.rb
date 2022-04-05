@@ -10,7 +10,7 @@ module EventConsumers
       @channel.queue("", :exclusive => true).bind(@exchange, :routing_key => "game_events.ships").subscribe do |delivery_info, metadata, payload|
         deserialized_payload = JSON.parse payload
 
-        puts "Game event: #{deserialized_payload}, routing key is #{delivery_info.routing_key}"
+        Ship.create!(name: deserialized_payload["name"], description: deserialized_payload["description"])
       end
     end
 
