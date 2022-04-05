@@ -6,3 +6,6 @@ gem "grape"
 gem "puma"
 
 gem "bunny"
+
+gem "pg"
+gem "otr-activerecord"
