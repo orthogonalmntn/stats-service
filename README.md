@@ -1,7 +1,13 @@
 # Stats Service
 
-Set env vars:
+### Set env vars
 
-`export DATABASE_URL=postgres://stats_service@localhost/stats_service_db`
+`export DATABASE_URL=postgresql://stats_service@localhost/stats_service_db`
 
-Start application with `rackup`
+### Run migrations
+
+`bundle exec rake db:migrate`
+
+### Start application
+
+`rackup`
