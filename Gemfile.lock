@@ -62,6 +62,7 @@ GEM
     rack (2.2.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
+    rake (13.0.6)
     rbtree (0.4.5)
     ruby2_keywords (0.0.5)
     set (1.0.2)
@@ -80,6 +81,7 @@ DEPENDENCIES
   otr-activerecord
   pg
   puma
+  rake
 
 RUBY VERSION
    ruby 3.1.0p0

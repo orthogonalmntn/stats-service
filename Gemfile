@@ -9,3 +9,5 @@ gem "bunny"
 
 gem "pg"
 gem "otr-activerecord"
+
+gem "rake"
