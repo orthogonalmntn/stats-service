@@ -1,5 +1,6 @@
 require "bunny"
 require "json"
+require "time"
 
 require_relative "models/event"
 require_relative "models/planet"

@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_05_071818) do
     t.string "name", null: false
     t.text "description", null: false
     t.string "type", null: false
+    t.datetime "occurred_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
