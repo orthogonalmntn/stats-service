@@ -2,7 +2,7 @@
 
 ### Set env vars
 
-`export DATABASE_URL=postgresql://stats_service@localhost/stats_service_db`
+`cp .env.dev .env`
 
 ### Run migrations
 

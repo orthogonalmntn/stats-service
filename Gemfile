@@ -11,3 +11,5 @@ gem "pg"
 gem "otr-activerecord"
 
 gem "rake"
+
+gem "dotenv"

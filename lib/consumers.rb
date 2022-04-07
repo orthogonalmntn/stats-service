@@ -11,7 +11,7 @@ require_relative "event_consumers/ship_consumer"
 require_relative "event_consumers/shop_consumer"
 
 module EventConsumers
-  connection = Bunny.new
+  connection = Bunny.new(ENV["RABBITMQ_URI"])
   connection.start
 
   channel = connection.create_channel

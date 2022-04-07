@@ -1,6 +1,8 @@
 require "bundler"
 Bundler.require(:default, :development)
 
+require "dotenv/load"
+
 OTR::ActiveRecord.configure_from_url! ENV["DATABASE_URL"]
 OTR::ActiveRecord.establish_connection!
 

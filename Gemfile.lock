@@ -17,6 +17,7 @@ GEM
       amq-protocol (~> 2.3, >= 2.3.1)
       sorted_set (~> 1, >= 1.0.2)
     concurrent-ruby (1.1.10)
+    dotenv (2.7.6)
     dry-configurable (0.14.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.6)
@@ -77,6 +78,7 @@ PLATFORMS
 
 DEPENDENCIES
   bunny
+  dotenv
   grape
   otr-activerecord
   pg
