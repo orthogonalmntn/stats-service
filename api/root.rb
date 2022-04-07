@@ -5,6 +5,10 @@ module Api
     format :json
     default_format :json
 
+    rescue_from StandardError do |e|
+      error!("Server Error", 500)
+    end
+
     mount ::Api::Events::RootEndpoint => "events"
 
   end
